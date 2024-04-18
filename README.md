@@ -1,2 +1,2 @@
 # geeknews
- Projeto desenvolvido para cadeira de COD:MOBILE na Faculdade Senac Pernambuco do curdo Análise e Desenvolvimento de Sistemas.
+ Projeto desenvolvido para cadeira de CODING: MOBILE na Faculdade Senac Pernambuco do curso Análise e Desenvolvimento de Sistemas (ADS).
