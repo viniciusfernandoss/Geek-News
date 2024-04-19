@@ -34,7 +34,7 @@ section#menu{
     justify-content: space-between;
     background-color: var(--color2);
     padding: 1% 10%;
-    height: 10vh;
+    height: 10%;
 }
 section#menu img{
     width: 90px;
@@ -120,7 +120,9 @@ section#menu img{
 
 /*Conteudo principal*/
 main{
-    margin: 0 10vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 60px;
     font-family: var(--fonte2);
 }
 main h1{
@@ -168,12 +170,29 @@ main article{
 
 /*Roda pé*/
 footer{
-    text-align: center;
     background-color: var(--color2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+    
+    
 }
-footer p{
-    padding: 10px;
+footer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10vw;
+}
+footer a{
+    text-decoration: none;
     color: var(--color1);
+    padding: 15px;
+    
+}
+footer a:active{
+    background-color: var(--color4);
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -183,7 +202,7 @@ footer p{
     }
     #nav-mobile.abrir{
         visibility: visible;
-        height: calc(100vh - 69vh);
+        height: calc(100vh - 69px);
     }
     #btn-menu{
         display: block;
@@ -191,9 +210,12 @@ footer p{
     /*Conteudo Principal*/
     main{
         margin: 0px;
+        margin-bottom: 300px;
     }
     main article{
-        margin: 20px;
-        font-size: small    ;
+        margin: 10px 20px;
+        font-size: small;
+        flex-direction: column;
     }
+    
 }

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --color0: #f2f2f2;
+    --color1: white;
+    --color2: black;
+    --color3: #21242B;
+    --color4: #FFBF00;
+
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: "Anton", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fonte1);
+}
+/*Cabeçalho*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+    padding: 1% 10%;
+    height: 10%;
+}
+header img{
+    width: 90px;
+}
+
+/*Roda pé*/
+footer{
+    background-color: var(--color2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+    
+    
+}
+footer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10vw;
+}
+footer a{
+    text-decoration: none;
+    color: var(--color1);
+    padding: 15px;
+    
+}
+footer a:active{
+    background-color: var(--color4);
+    border-radius: 20px;
+}
